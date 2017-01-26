@@ -19,5 +19,8 @@ from yz import views as yz_views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',yz_views.index),
+    url(r'^login.html$',yz_views.login),
+    url(r'^index.html',yz_views.index),
     url(r'^test.html$',yz_views.test),
+    url(r'^show_url.html$',yz_views.show_url),
 ]
