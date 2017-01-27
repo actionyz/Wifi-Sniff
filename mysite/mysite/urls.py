@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^index.html',yz_views.index),
     url(r'^test.html$',yz_views.test),
     url(r'^show_url.html$',yz_views.show_url),
+    url(r'^image.html$',yz_views.image),
 ]

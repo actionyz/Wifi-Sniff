@@ -31,7 +31,7 @@ def set_flag(threadName,):
 	global Flag
 	sleep(0.02)
 	Flag = 0
-	sleep(4)
+	sleep(0.5)
 	Flag = 1
 	print "********************************************************************"
 
@@ -69,7 +69,7 @@ for ts,buf in pc:
 			print mac
 			print ts
 			try:
-				http = dpkt.http.Request(tcp.data) or die("cant extact")
+				http = dpkt.http.Request(tcp.data) or die("cant extract")
 				if  len(http.headers)>0 and 'user-agent'  in http.headers and 'host' in http.headers:
 					useragent = re.findall('\(([^&]{1,})\)',http.headers['user-agent']) 
 					time = datetime.datetime.now()

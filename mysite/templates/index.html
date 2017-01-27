@@ -41,11 +41,6 @@
         <nav class="templatemo-left-nav">          
           <ul>
             <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Host List</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
-            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li>
-            <li><a href="show_url.html"><i class="fa fa-sliders fa-fw"></i>show_url</a></li>
             <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
@@ -59,8 +54,8 @@
               <i class="fa fa-times"></i>
               <div class="square"></div>
               <h2 class="templatemo-inline-block">System Introduction</h2><hr>
-              <p>Works on all major browsers. IE 10+. Visual Admin is <a href="http://www.templatemo.com/tag/admin" target="_parent">free responsive admin template</a> for everyone. Feel free to use this template for your backend user interfaces. Please tell your friends about <a href="http://www.templatemo.com" target="_parent">templatemo.com</a> website. You may <a href="http://www.templatemo.com/contact" target="_parent">contact us</a> if you have anything to say.</p>
-              <p>Nunc placerat purus eu tincidunt consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nulla quis risus auctor, non placerat augue consectetur. Fusce mi lacus, semper sit amet mattis eu.</p>              
+              <p>To achieve the WiFi sniffer function and the victim, a list of the information displayed in the platform. Sniffer information including user browsing web pages and pictures.</p>
+              <p> Can automatically classify the data to achieve the role of education warning.</p>              
             </div>
           </div>
             <div class="panel panel-default table-responsive">
@@ -75,6 +70,7 @@
                     <td>MAC<span class="caret"></span></td>
                     <td>IP<span class="caret"></span></td>
                     <td>Url link<span class="caret"></span></td>
+                    <td>image link<span class="caret"></span></td>
                   </tr>
                 </thead>
                 <tbody>
@@ -88,6 +84,7 @@
                         <td>{{ line.ip }}</td>
                         
                         <td><a href="./show_url.html?id={{line.id}}">url</a></td>
+                        <td><a href="./image.html?id={{line.id}}">image</a></td>
                       </tr>
                     {% endfor %}             
                 </tbody>
